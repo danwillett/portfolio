@@ -2,14 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
-    box-sizing: border-box;
-}
-  
 body {
     font-family: Arial;
     margin: 0;
-    background-color: blanchedalmond;
+    background-color:oldlace;
     width:100%;
 
 }
@@ -31,7 +27,8 @@ header h1 {
     flex:0 0 370px;
     margin: 0 20px;
     font-size:50px;
-    color:black;
+    color:blanchedalmond;
+    -webkit-text-stroke: 1px black;
     padding-bottom: 10px;
 }
 
@@ -63,6 +60,15 @@ a {
     text-decoration: none;
 }
 
+/* Pic under nav-bar */
+.beach-pic {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/beach-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 /* MAIN STYLING */
 main {
     display:flex;
@@ -72,22 +78,24 @@ main {
 
 /* Each section fills the width of the webpage and is automatically flex display and centered in the middle */
 section {
-width:100vw;
+width:90vw;
 display:flex;
 align-items: center;
 justify-content: center;
-background-color: blanchedalmond;
+margin: 0 auto;
 }
 
 /* About Me Section */
 h2 {
     font-size:30px;
-    margin: 50px 20px 10px 0;
-    padding: 0px 10px;
+    padding: 10px 0;
+    margin: 20px;
 }
 
 .about-me {
-    flex-wrap:wrap;    
+    flex-wrap:wrap;
+    gap:30px;
+    /* margin: 0 30px;   */
     }
 
 .about-me img {
@@ -95,20 +103,23 @@ h2 {
     border:solid black;
     border-width: 2px;
     max-height:60vh;
-    max-width:90%;
-    margin-left:10px;
+    max-width:80%;
     
 }
 .about-me article {
-    flex: 1 1 45vw;
-    max-width:90%;
-    max-height:100%;
+    flex: 1 1 380px;
+    max-width:80%;
+    min-height:fit-content;
     line-height: 20px;
     border:solid black;
     border-width: 2px;
     padding:10px;
-    margin-right:10px;
     
+}
+
+.about-me article p {
+    max-height:100%;
+    min-width:0;                      
 }
 
 /* Work Portfolio section */
@@ -128,12 +139,13 @@ h2 {
     padding:5px;
     border: solid black;
     border-width:0px 2px 2px 0px;
+    color:black;
 }
 
 .project-card {
 flex: 1 1 40vw;
 border:solid black 2px;
-margin: 10px 10px;
+margin: 20px 10px;
 background-size: cover;
 background-position: center;
 height:30vh;
@@ -146,11 +158,10 @@ height:30vh;
 /* first project card needs to be bigger than all others */
 #project-1 {
 flex: 1 1 80vw;
+margin: 0 10px;
 height:60vh;
 background-image: url("../images/beach-1.jpg");
 }
-
-
 
 #project-2 {
     background-image: url("../images/camp.jpg");
@@ -158,6 +169,13 @@ background-image: url("../images/beach-1.jpg");
 
 #project-3 {
     background-image: url("../images/flower.jpg");
+}
+
+.work-link {
+    /* color:black; */
+    height:100%;
+    width:100%;
+ 
 }
 
 /* contact info */
