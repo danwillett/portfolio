@@ -6,7 +6,7 @@ The motivation behind this project was to create a personal portfolio of works I
 
 ## Installation
 
-No steps are required to intall this application. You just need to have a working web browser with access to internet. Navigate to the following link to access the portfolio: _____.
+No steps are required to intall this application. You just need to have a working web browser with access to internet. Navigate to the following link to access the portfolio: https://danwillett.github.io/professional-portfolio/
 
 ## Usage
 
