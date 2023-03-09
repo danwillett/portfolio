@@ -5,74 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style2.css" />
     <title>Dan Willett's Portfolio</title>
 </head>
 
-<body class="bg-light">
+<body>
     <!-- Header has my name and navigation bar with links-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-around align-items-center">
-            <p class="name mx-2 my-3">Dan Willett</p>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#scroll-me">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scroll-work">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scroll-contact">Contact Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scroll-work">Resume</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scroll-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scroll-work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scroll-contact">Contact Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scroll-work">Resume</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
 
-    <!-- picture for decoration underneath header -->
-    <div class="beach-pic">
-        <span role="img" aria-label="picture of a beach"> </span>
-    </div>
-
-
     <!-- holds sections with about me, work, contact info... -->
-    <main>
+    <main class="container d-flex flex-column justify-content-center">
 
-        <!-- About me: picture with introduction article -->
-        <h2 id="scroll-me">About Me</h2>
-        <section class="about-me">
+            <intro class="container d-flex flex-row justify-content-center">
+                <section id="intro-words">
+                    <p class="blue-words">Hey there, my name is</p>
+                    <div class="d-flex flex-column flex-wrap">
+                        <p id="name">
+                            Daniel Willett.
+                        </p>
+                        <p>I'm a full stack engineer with a passion for tackling environmental problems. I've conducted research in the fields of oceanography and biogeochemistry and am now pursuing opportunities to build applications that can used to mitigate the effects of climate change and combat other environmental issues.</p>
+                    </div>
+                
+                </section>
+                
+            </intro>       
 
-            <!-- picture -->
-            <img src="./assets/images/bio2.jpg" alt="Picture of Dan Willett">
+            <myself id="scroll-me" class="container d-flex flex-column justify-content-center">
+                
+                <content class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+                    <article>
+                        <h2>About Me</h2>
+                        <p>
+                            <br>I am a recent graduate from UC Berkeley with a BS in Molecular Environmental Biology. The courses I took
+                            were broad, encompassing topics within Earth System and Environmental Sciences. They ranged from cellular biology to landscape-level geomorphology. 
+                             When I wasn't in the books, I was conducting climate change mitigation research in the field of biogeochemistry as a
+                            member of the Silver Lab group.
+                            </br>
+                           
+                            <br>
+                            In October 2022, I began a Full Stack Web Development program offered through UC Berkeley Extension's
+                            Coding Bootcamp. My research experiences in undergrad exposed me to coding for data analytics in MATLAB and
+                            Python, and I found myself really enjoying the process. With a background in Enviornmental Science,
+                            and these new coding skills, I searching for opportunities where I can help create positive change
+                            in our world.
+                            </br>
 
-            <!-- bio section -->
-            <article>
-                <p>
-                    I am a recent graduate from UC Berkeley with a BS in Molecular Environmental Biology. During
-                    undergrad, I spent my days studying the broad range topics encompassing Earth System and
-                    Environmental Sciences ranging from cellular biology to landscape-level geomorphology. When I wasn't
-                    in the books, I was conducting climate change mitigation research in the field of soil science as a
-                    member of the Silver Lab group.
-                    Outside of academics, I love playing volleyball, running, going to the beach, and playing board
-                    games.
-                    Recently, I began a Full Stack Web Develop program offered through UC Berkeley Extension's Coding
-                    Bootcamp. My research experiences in undergrad exposed me to coding for data analytics in Matlab,
-                    Python, and R, and I found myself really enjoying the process. 
-                </p>
-            </article>
-        </section>
+                            <br>
+                            Here are a few languages, libraries & frameworks, and tools & platforms I've learned from my Bootcamp:
+                            <div class="d-flex flex-row flex-wrap">
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>HTML</li>
+                                </ul>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Flask</li>
+                                    <li>React</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <ul>
+                                    <li>MySql + Sequelize</li>
+                                    <li>MongoDB + Mongoose</li>
+                                    <li>Heroku</li>
+                                    <li>Bootstap</li>
+                                </ul>                               
 
+                            </div>
+                            </br>
+                        </p>
+                    </article>
+
+                    <!-- picture -->
+                    <picture>
+                        <img src="./assets/images/bio2.jpg" class="img-fluid"alt="Picture of Dan Willett">
+                    </picture>
+    
+                </content>
+                
+            </myself>
+      
         <!-- Project portfolio section -->
-        <h2 id="scroll-work">Work</h2>
+        <portfolio id="scroll-work">
+            <h2>Bootcamp Projects</h2>
         <section class="work">
 
             <!-- each project card represents a different linked project -->
@@ -87,7 +129,7 @@
 
             <a class="work-link" href="https://stark-headland-23711.herokuapp.com/">
                 <div class="project-card" id="project-2">
-                    
+
                     <h3>Restaurant Roulette</h3>
                     <span role="img" aria-label="image of restaurant roulette homepage"> </span>
                 </div>
@@ -100,24 +142,35 @@
             </div>
 
         </section>
+        </portfolio>
+        
 
         <!-- Contact Info Section -->
         <footer class="contact d-flex flex-row justify-content-around align-items-center" id="scroll-contact">
             <h2>Contact Me</h2>
             <!-- email and phone number -->
             <ul class='my-0'>
-                <li>Email:   daniel.willett2@gmail.com</li>
-                <li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BBg3h7SVFRv2SovyiTqMZVQ%3D%3D">LinkedIn:   Dan Willett</a></li>
+                <li>Email: daniel.willett2@gmail.com</li>
+                <li><a
+                        href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BBg3h7SVFRv2SovyiTqMZVQ%3D%3D">LinkedIn:
+                        Dan Willett</a></li>
             </ul>
 
         </footer>
 
     </main>
 
-<!-- <script src="./assets/js/script.js"></script> -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

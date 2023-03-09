@@ -86,7 +86,14 @@ h2 {
     min-width: 0;
 }
 
+
+
 /* Work Portfolio section */
+
+portfolio {
+    min-height: 100vh;
+
+}
 
 .work {
     flex-wrap: wrap;
