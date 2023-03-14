@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(43, 29, 17); 
     color: rgb(183, 189, 166)
@@ -47,6 +51,15 @@ picture {
     
 }
 
+portfolio {
+    padding-top: 7vh;
+    max-width: 700px;
+}
+
+portfolio h2 {
+    margin: 20px 0;
+}
+
 /* Project cards wrap, grow, and shrink when the webpage changes. These are flexboxes as well */
 .project-card {
     flex: 1 1 40vw;
@@ -65,7 +78,11 @@ a {
     color:rgba(255, 248, 108, 0.846);
     text-decoration: none;
 }
-.work h3 {
+
+portfolio h2 {
+    margin-bottom: 40px;
+}
+portfolio h3 {
     font-size: 20px;
     background-color: blanchedalmond;
     text-align: center;
@@ -92,4 +109,9 @@ a {
 
 #project-3 {
     background-image: url("../images/flower.jpg");
+}
+
+contact {
+    padding-top: 3vh;
+    min-height: 50vh;
 }

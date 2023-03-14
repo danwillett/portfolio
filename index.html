@@ -26,8 +26,11 @@
                         <a class="nav-link" href="#scroll-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scroll-work">Work</a>
+                        <a class="nav-link" href="#scroll-work">Projects</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#scroll-work">Research</a>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#scroll-contact">Contact Info</a>
                     </li>
@@ -42,82 +45,91 @@
     <!-- holds sections with about me, work, contact info... -->
     <main class="container d-flex flex-column justify-content-center">
 
-            <intro class="container d-flex flex-row justify-content-center">
-                <section id="intro-words">
-                    <p class="blue-words">Hey there, my name is</p>
-                    <div class="d-flex flex-column flex-wrap">
-                        <p id="name">
-                            Daniel Willett.
-                        </p>
-                        <p>I'm a full stack engineer with a passion for tackling environmental problems. I've conducted research in the fields of oceanography and biogeochemistry and am now pursuing opportunities to build applications that can used to mitigate the effects of climate change and combat other environmental issues.</p>
+        <intro class="container d-flex flex-row justify-content-center">
+            <section id="intro-words">
+                <p class="blue-words">Hi, my name is</p>
+                <div class="d-flex flex-column flex-wrap">
+                    <p id="name">
+                        Dan Willett.
+                    </p>
+                    <p>I'm a full stack engineer with a passion for tackling environmental problems. I've conducted
+                        research in the fields of oceanography and biogeochemistry and am now pursuing opportunities where I can develop applications 
+                        that can used to mitigate the effects of climate change and combat other
+                        environmental issues.</p>
+                </div>
+
+            </section>
+
+        </intro>
+
+        <myself id="scroll-me" class="container d-flex flex-column justify-content-center">
+
+            <content class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+                <article>
+                    <h2>About Me</h2>
+                    <p>
+                        <br>I am a recent graduate from UC Berkeley with a BS in Molecular Environmental Biology. The
+                        courses I took
+                        encompassed a broad range of topics within Earth System and Environmental Sciences. They ranged
+                        from
+                        cellular biology to landscape-level geomorphology.
+                        When I wasn't in the books, I was conducting climate change mitigation research in the field of
+                        biogeochemistry as a
+                        member of the Silver Lab group.
+                        </br>
+
+                        <br>
+                        In October 2022, I began a Full Stack Web Development program offered through UC Berkeley
+                        Extension's
+                        Coding Bootcamp. My research experiences in undergrad exposed me to coding for data analytics in
+                        MATLAB and
+                        Python, and I found myself really enjoying the process. With a background in Enviornmental
+                        Science,
+                        and these new coding skills, I searching for opportunities where I can help create positive
+                        change
+                        in our world.
+                        </br>
+
+                        <br>
+                        Here are a few languages, libraries & frameworks, and tools & platforms I've learned from my
+                        Bootcamp:
+                    <div class="d-flex flex-row flex-wrap">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>HTML</li>
+                        </ul>
+                        <ul>
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>React</li>
+                            <li>CSS</li>
+                        </ul>
+                        <ul>
+                            <li>MySql + Sequelize</li>
+                            <li>MongoDB + Mongoose</li>
+                            <li>Heroku</li>
+                            <li>Bootstap</li>
+                        </ul>
+
                     </div>
-                
-                </section>
-                
-            </intro>       
+                    </br>
+                    </p>
+                </article>
 
-            <myself id="scroll-me" class="container d-flex flex-column justify-content-center">
-                
-                <content class="d-flex flex-row flex-wrap justify-content-around align-items-center">
-                    <article>
-                        <h2>About Me</h2>
-                        <p>
-                            <br>I am a recent graduate from UC Berkeley with a BS in Molecular Environmental Biology. The courses I took
-                            were broad, encompassing topics within Earth System and Environmental Sciences. They ranged from cellular biology to landscape-level geomorphology. 
-                             When I wasn't in the books, I was conducting climate change mitigation research in the field of biogeochemistry as a
-                            member of the Silver Lab group.
-                            </br>
-                           
-                            <br>
-                            In October 2022, I began a Full Stack Web Development program offered through UC Berkeley Extension's
-                            Coding Bootcamp. My research experiences in undergrad exposed me to coding for data analytics in MATLAB and
-                            Python, and I found myself really enjoying the process. With a background in Enviornmental Science,
-                            and these new coding skills, I searching for opportunities where I can help create positive change
-                            in our world.
-                            </br>
+                <!-- picture -->
+                <picture>
+                    <img src="./assets/images/bio2.jpg" class="img-fluid" alt="Picture of Dan Willett">
+                </picture>
 
-                            <br>
-                            Here are a few languages, libraries & frameworks, and tools & platforms I've learned from my Bootcamp:
-                            <div class="d-flex flex-row flex-wrap">
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>HTML</li>
-                                </ul>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Flask</li>
-                                    <li>React</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <ul>
-                                    <li>MySql + Sequelize</li>
-                                    <li>MongoDB + Mongoose</li>
-                                    <li>Heroku</li>
-                                    <li>Bootstap</li>
-                                </ul>                               
+            </content>
 
-                            </div>
-                            </br>
-                        </p>
-                    </article>
+        </myself>
 
-                    <!-- picture -->
-                    <picture>
-                        <img src="./assets/images/bio2.jpg" class="img-fluid"alt="Picture of Dan Willett">
-                    </picture>
-    
-                </content>
-                
-            </myself>
-      
         <!-- Project portfolio section -->
-        <portfolio id="scroll-work">
+        <portfolio id="scroll-work" class="container d-flex flex-column">
             <h2>Bootcamp Projects</h2>
-        <section class="work">
-
-            <!-- each project card represents a different linked project -->
 
             <a class="work-link" href="https://danwillett.github.io/national-park-planner/">
                 <div class="project-card" id="project-1">
@@ -127,36 +139,44 @@
                 </div>
             </a>
 
-            <a class="work-link" href="https://stark-headland-23711.herokuapp.com/">
-                <div class="project-card" id="project-2">
-
-                    <h3>Restaurant Roulette</h3>
-                    <span role="img" aria-label="image of restaurant roulette homepage"> </span>
+            <section class="d-flex flex-row flex-wrap justify-content-between">
+                <div class="col-6">
+                    <a class="work-link" href="https://stark-headland-23711.herokuapp.com/">
+                        <div class="project-card" id="project-2">
+                            <h3>Restaurant Roulette</h3>
+                            <span role="img" aria-label="image of restaurant roulette homepage"> </span>
+                        </div>
+                    </a>
                 </div>
-            </a>
+                
+                <div class="col-6">
+                    <div class="project-card" id="project-3">
+                        <h3>Coming Soon!</h3>
+                        <span role="img" aria-label="decorative image"> </span>
+                    </div>
+                </div>
+                
 
-            <div class="project-card" id="project-3">
-                <h3>Coming Soon!</h3>
-                <!-- aria label -->
-                <span role="img" aria-label="decorative image"> </span>
-            </div>
-
-        </section>
+            </section>
         </portfolio>
-        
+
+        <!-- <research>
+            cont
+
+        </research> -->
+
 
         <!-- Contact Info Section -->
-        <footer class="contact d-flex flex-row justify-content-around align-items-center" id="scroll-contact">
+        <contact class="contact d-flex flex-column justify-content-center align-items-center" id="scroll-contact">
             <h2>Contact Me</h2>
             <!-- email and phone number -->
-            <ul class='my-0'>
-                <li>Email: daniel.willett2@gmail.com</li>
-                <li><a
-                        href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BBg3h7SVFRv2SovyiTqMZVQ%3D%3D">LinkedIn:
-                        Dan Willett</a></li>
-            </ul>
+            <p><a href=#>Email: daniel.willett2@gmail.com</a></p>
+            <p><a href="https://github.com/danwillett/">Github: danwillett</a></p>
+            <p><a
+                    href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BBg3h7SVFRv2SovyiTqMZVQ%3D%3D">LinkedIn:
+                    Dan Willett</a></p>
 
-        </footer>
+        </contact>
 
     </main>
 
